@@ -1,0 +1,143 @@
+/* General Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #222831; /* Soft dark blue-gray */
+  }
+  
+  /* Sidebar Styling */
+  .dashboard-sidebar {
+    width: 250px;
+    background: #393e46; /* Dark gray sidebar */
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 60px; /* Moves below navbar */
+    bottom: 0;
+    color: white;
+    border-right: 2px solid #2d3136;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 15px 15px 0px;
+  }
+  
+  /* Urban Vista Logo & Dashboard Header */
+  .dashboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Sidebar Menu */
+  .dashboard-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dashboard-menu li {
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    color: #eeeeee; /* Light gray text */
+  }
+  
+  .dashboard-menu li:hover,
+  .dashboard-menu li.active {
+    background-color: #ffd369; /* Soft yellow */
+    color: #222831;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    margin-top: 20px;
+    padding: 12px 15px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .logout-btn:hover {
+    background-color: #d94350;
+  }
+  
+  /* Main Content */
+  .dashboard-content {
+    margin-left: 260px;
+    padding: 40px;
+    width: 100%;
+    height: 100vh;
+    background-color: #31363f; /* Slightly lighter dark background */
+    color: white;
+    overflow-y: auto;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  /* Sections */
+  .profile-section,
+  .wishlist-section,
+  .reviews-section,
+  .display-section {
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: #f1f0ee;
+    font-weight: bold;
+    margin-top: 60px;
+    padding: 20px;
+    background: #3a3f47; /* Dark but readable */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-icon {
+    font-size: 50px; /* Adjust size */
+    color: #ffd369; /* Match yellow highlight */
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Active Section Styling */
+  .active-section {
+    display: block;
+  }
+  .hidden-section {
+    display: none;
+  }
+
+  .review-item {
+    background: #1e1f22;
+    padding: 20px; /* Increase padding for more space */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #007bff;
+    min-height: 100px; /* Increase height */
+    width: 600px; /* Adjust width */
+    font-size: 16px; /* Increase text size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column; /* Ensures reviews are listed below the title */
+  gap: 10px; /* Adds spacing between review items */
+}
+
+  

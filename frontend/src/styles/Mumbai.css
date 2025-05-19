@@ -1,0 +1,147 @@
+/* 🌆 Mumbai Page */
+.mumbai-container {
+  background-color: #181818;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+/* 🏙️ Mumbai Header */
+.mumbai-header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.mumbai-bg {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mumbai-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #f7f2f2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation: subtleSlideFromTop 1s ease-in-out;
+}
+
+@keyframes subtleSlideFromTop {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.mumbai-info {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* 📌 Layout: Content */
+.scrollable-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+/* 🏙️ Section Title (now independent of the container) */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 10px; /* More spacing for separation */
+  color: #e8e21d;
+}
+
+/* 🎟️ Attractions Grid */
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* ✨ Image Card */
+.card {
+  background: #333;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 🍔 Hamburger Menu Button */
+.hamburger-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* 📌 Drawer Menu */
+.menu-list {
+  width: 250px;
+  background: #222;
+  height: 100vh;
+  color: white;
+}
+
+.menu-list .MuiListItemText-primary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.menu-list .MuiListItem-root:hover {
+  background: #444;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .attractions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .attractions-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
