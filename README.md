@@ -30,11 +30,11 @@ Urban Vista is a smart city web application designed to help users explore citie
 **APIs:**
 - OpenWeather API (for weather updates)
 
-🚀 Future Scope
-Hotel booking
-Social media integration
-Multi-city support
-AI-based itinerary planning
+🚀**Future Scope**
+- Hotel Boooking 
+- Social media integration
+- Multi-city support
+- AI- based itinerary planning
 
 
 
