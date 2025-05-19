@@ -47,16 +47,23 @@ Urban Vista is a smart city web application designed to help users explore citie
 ```bash
 git clone https://github.com/your-username/urban-vista.git
 cd urban-vista
+```
+
+2. **Setup backend**
 
 ```bash
 cd backend
 npm install
 node server.js
+```
+3. **Setup frontend**
 
 ```bash
 cd ../frontend
 npm install
 npm start
+```
+
 
 
 
