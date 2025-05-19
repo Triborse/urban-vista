@@ -48,5 +48,6 @@ Urban Vista is a smart city web application designed to help users explore citie
 git clone https://github.com/your-username/urban-vista.git
 cd urban-vista
 
-License
+
+**License**
 This project is free to use and does not contains any license.
